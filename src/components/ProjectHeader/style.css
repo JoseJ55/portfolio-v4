@@ -1,0 +1,117 @@
+.projectHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectHead {
+    width: 96%;
+    background-color: var(--main-color);
+    padding: 1vh 2%;
+}
+
+.projectHead button {
+    padding: .5vh 2vw;
+    background-color: var(--main-color);
+    border: grey .1rem solid;
+    border-radius: 20%;
+    color: var(--text-color);
+    font-size: 110%;
+}
+
+.projectHead button:hover {
+    cursor: pointer;
+}
+
+.projectHead button:active {
+    background-color: var(--background-color);
+}
+
+.projectName {
+    width: 100%;
+    text-align: center;
+    padding: 4vh 0;
+    color: var(--secondary-color);
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.projectDesc {
+    width: 100%;
+}
+
+.projectDesc p {
+    width: 76%;
+    margin: auto;
+    padding: 4vh 2%;
+    color: var(--text-color);
+    font-size: 120%
+}
+
+.projectLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #777;
+    padding: 2vh 0;
+}
+
+.projectLinks a {
+    color: var(--secondary-color)
+}
+
+.projectLinks a:hover {
+    color: var(--text-color);
+}
+
+.projectLinks p{
+    font-size: 130%;
+    padding: 0 1%;
+    color: var(--secondary-color);
+}
+
+.liveLink {
+    border-left:  black .1rem solid;
+}
+
+.projectTools {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+    color: white;
+    font-size: 130%;
+}
+
+.projectTools p{
+    color: var(--secondary-color);
+}
+
+.projectTools ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vh 2vw;
+}
+
+.projectTools li {
+    font-size: 90%;
+    list-style-type: none;
+    padding: 0 1vw;
+}
+
+@media only screen and (max-width: 1100px){
+    .projectHead button{padding: 1vh 3vw;}
+    .projectName {font-size: 250%;}
+    .projectDesc p {font-size: 150%}
+    .projectLinks p {font-size: 140%;}
+}
+
+@media only screen and (max-width: 500px){
+    .projectHead button {padding: .5vh 2vw;}
+    .projectName {font-size: 200%;}
+    .projectDesc p {font-size: 120%;}
+    .projectLinks p {font-size: 85%;}
+    .projectTools li{font-size: 80%;}
+}
